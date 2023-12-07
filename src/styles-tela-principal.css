@@ -1,0 +1,63 @@
+/* styles-tela-principal.css */
+
+/* Estilos para a barra do menu */
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Estilos para a área de informações */
+  .informacoes {
+    margin-top: 50px; /* Ajuste conforme necessário */
+    padding: 20px;
+  }
+  
+  /* Estilos para a barra de pesquisa */
+  input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilos para o seletor de tipo de comida */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilos para a imagem da comida */
+  .imagem-comida {
+    width: 100px; /* Ajuste conforme necessário */
+    height: 100px; /* Ajuste conforme necessário */
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para a área de favoritos */
+  .favoritos {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para a lista de comidas */
+  .comidas-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibição em 3 colunas, ajuste conforme necessário */
+    grid-gap: 20px;
+  }
+  
+  /* Estilos para o componente FoodCard (exemplo) */
+  /* Certifique-se de aplicar os estilos adequados ao componente FoodCard */
+  
