@@ -1,5 +1,3 @@
-// Importe os módulos necessários
-import React from 'react';
 import imagem from './assets/Fabio.png';
 import './styles.css'; // Importe o estilo CSS
 
@@ -11,9 +9,9 @@ function TelaSobre() {
         <div className="wrap-about">
           {/* Seção 1 */}
           <div className="about-section">
-            <h2 className="about-title">Favorite Food's</h2>
+            <h2 className="about-title">Favorite-Foods</h2>
             <p>
-            O Favorite Food's é um projeto desenvolvido no âmbito da disciplina de Programação Web do CERES-UFRN. 
+            O Favorite Foods é um projeto desenvolvido no âmbito da disciplina de Programação Web do CERES-UFRN. 
             Sua proposta é estabelecer uma comunidade de entusiastas da boa culinária,proporcionando a oportunidade
             de  curtir e Favoritar suas experiências gastronômicas de forma interativa.
             </p>

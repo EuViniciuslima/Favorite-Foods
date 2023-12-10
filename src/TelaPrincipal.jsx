@@ -11,7 +11,6 @@ function TelaPrincipal() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [foodType, setFoodType] = useState('');
-  const [favoriteFoods, setFavoriteFoods] = useState([]);
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
