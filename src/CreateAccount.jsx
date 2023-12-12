@@ -1,6 +1,8 @@
 import './styles-create-account.css'
 import { useState } from 'react';
-import './styles.css'; // Certifique-se de importar o arquivo de estilos correto
+import './styles.css';
+import './App.jsx';
+//import {Link} from 'react-router-dom';// Certifique-se de importar o arquivo de estilos correto
 
 function CreateAccount() {
   // Estados para armazenar os valores dos campos
@@ -84,7 +86,7 @@ function CreateAccount() {
 
             <div className='text-center'>
               <span className='text1'>Já possui uma conta?</span>
-              <a className='text2' href='#'>Login</a>
+              <a className='text2' href='./App.jsx'>Login</a>
             </div>
           </form>
         </div>
