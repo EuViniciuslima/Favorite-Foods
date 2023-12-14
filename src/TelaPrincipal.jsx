@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './styles-tela-principal.css'; // Certifique-se de importar o arquivo de estilos correto
 import FoodCard from './FoodCard'; // Supondo que você tenha um componente FoodCard para exibir as comidas
 
@@ -75,6 +75,41 @@ function TelaPrincipal() {
       </div>
     </div>
   );
+
+    function App() {
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+      // Função para buscar dados da API usando fetch
+      const fetchData = async () => {
+        try {
+          const response = await fetch('https://gold-anemone-wig.cyclic.app/receitas');
+          if (!response.ok) {
+            throw new Error('Erro ao buscar dados');
+          }
+          const result = await response.json();
+          setData(result);
+        } catch (error) {
+          console.error('Erro:', error);
+        }
+      };
+
+      fetchData(); // Chamada à função para buscar os dados ao montar o componente
+    }, []); // Array vazio assegura que isso é executado apenas uma vez no início
+
+    return (
+      <div className="App">
+        <h1>Dados da API:</h1>
+        {data ? (
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        ) : (
+          <p>Carregando dados...</p>
+        )}
+      </div>
+    );
+  }
 }
+
+
 
 export default TelaPrincipal;
